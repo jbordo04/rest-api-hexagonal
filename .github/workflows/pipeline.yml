@@ -35,7 +35,7 @@ jobs:
       - uses: actions/upload-artifact@v4 # Action para subir los resultados como (artifacts) generados en el workflow, para poder ser utilizados
         with:
           name: dist # Name of artifact
-          path: src # Path of where to upload artifact
+          path: dist # Path of where to upload artifact
 
   test:
     needs: build
@@ -53,6 +53,6 @@ jobs:
       - uses: actions/download-artifact@v4 # Action para descargar datos(artifacts) generados en el workflow anteriormente
         with:
           name: dist # Name of artifact
-          path: src # Path of where to download artifact
+          path: dist # Path of where to download artifact
       - name: Execute Test
         run: npm test
