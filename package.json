@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest --detectOpenHandles --forceExit",
     "test:watch": "jest --watchAll --detectOpenHandles",
-    "dev": "nodemon src/index.ts",
-    "build": "ts-node src/index.ts",
+    "app": "nodemon src/index.ts",
+    "build": "ts-node src/indexJest.ts",
     "eslint": "eslint \"./**/*.{js,ts}\""
   },
   "keywords": [],

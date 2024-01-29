@@ -54,5 +54,5 @@ export class Server {
   }
 }
 
-new Server(PORT).start()
-// new Server(PORT).stop()
+const app = new Server(PORT)
+app.start()
