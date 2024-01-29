@@ -1,16 +1,21 @@
-import "dotenv/config"
+// import "dotenv/config"
 import supertest from "supertest"
 import { Server } from "../src/index"
+// const PORT = Number(process.env.PORT) || 4560
 const PORT = 4560
 const server = new Server(PORT)
 
 const app = server.express
 const api = supertest(app)
 
-beforeEach(async () => {
+beforeAll(async () => {
   await server.stop()
   await server.start()
 })
+// beforeEach(async () => {
+//   await server.stop()
+//   await server.start()
+// })
 
 afterAll(async () => {
   // Cierra el servidor después de que todas las pruebas hayan finalizado

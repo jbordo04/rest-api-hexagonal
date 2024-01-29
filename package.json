@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --detectOpenHandles",
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:watch": "jest --watchAll --detectOpenHandles",
     "dev": "ts-node src/index.ts",
     "build": "npx tsc",
     "eslint": "eslint \"./**/*.{js,ts}\""
