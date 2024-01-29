@@ -30,8 +30,6 @@ jobs:
         with:
           cache: "npm"
           node-version: "20"
-      - name: Install dependencies
-        run: npm ci
       - name: Build
         run: npm run build
       - uses: actions/upload-artifact@v4 # Action para subir los resultados como (artifacts) generados en el workflow, para poder ser utilizados
