@@ -1,5 +1,5 @@
 import supertest from "supertest"
-import { Server } from "../index"
+import { Server } from "../src/index"
 const PORT = 4560
 const server = new Server(PORT)
 
