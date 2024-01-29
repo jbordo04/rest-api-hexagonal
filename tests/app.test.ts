@@ -11,6 +11,11 @@ beforeEach(async () => {
   await server.start()
 })
 
+afterAll(async () => {
+  // Cierra el servidor después de que todas las pruebas hayan finalizado
+  await server.stop()
+})
+
 describe("Testing de una API REST", () => {
   it("Getting all task", async () => {
     expect.assertions(2)

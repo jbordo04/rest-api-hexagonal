@@ -5,10 +5,12 @@ import cors from "cors"
 import { router } from "./infrastructure/repositories/express-router"
 export const PORT = Number(process.env.PORT) ?? 4000
 import http from "http"
+
 // const corsOptions = {
 //   origin: `http://localhost:${PORT}`,
 //   optionsSuccessStatus: 200,
 // }
+
 export class Server {
   private server: http.Server | null
   readonly port: number
