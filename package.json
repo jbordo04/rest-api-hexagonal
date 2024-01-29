@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --detectOpenHandles",
+    "test": "jest --watchAll --detectOpenHandles",
     "dev": "ts-node src/index.ts",
     "build": "npx tsc",
     "eslint": "eslint \"./**/*.{js,ts}\""
