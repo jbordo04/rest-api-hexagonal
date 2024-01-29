@@ -1,7 +1,5 @@
-// import "dotenv/config"
 import supertest from "supertest"
 import { Server } from "../src/index"
-// const PORT = Number(process.env.PORT) || 4560
 const PORT = 4560
 const server = new Server(PORT)
 

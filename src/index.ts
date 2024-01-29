@@ -3,7 +3,7 @@ import express from "express"
 import { json, urlencoded } from "body-parser"
 import cors from "cors"
 import { router } from "./infrastructure/repositories/express-router"
-export const PORT = Number(process.env.PORT) ?? 4000
+export const PORT = Number(process.env.PORT) || 4000
 import http from "http"
 
 // const corsOptions = {
