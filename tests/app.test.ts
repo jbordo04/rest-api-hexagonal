@@ -1,3 +1,4 @@
+import "dot/config"
 import supertest from "supertest"
 import { Server } from "../src/index"
 const PORT = 4560
