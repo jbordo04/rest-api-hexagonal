@@ -38,7 +38,3 @@ Es una arquitectura de sofware que trata de distribuir un proyecto en 3 niveles 
 Los niveles tienen una intencionanilidad de poder trabajar de manera abstracta y classificar el proyecto según esto, para así, poder llevarlo a un nivel de modularidad que facilite cualquier actualización/cambio de consulta de datos, interfaz, endpoints, etc.
 
 Nuestro API Rest será sobre una aplicacion `ToDo List` en la que implementaremos el CRUD con clases y utilizando express como framework.
-
-```
-
-```

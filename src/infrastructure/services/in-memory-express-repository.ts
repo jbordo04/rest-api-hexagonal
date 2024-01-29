@@ -13,7 +13,10 @@ export const readFile = async () => {
 };
 
 export const writeJSON = async (data: object) =>
-  fs.promises.writeFile("src/infrastructure/database/TaskDB.json", JSON.stringify(data));
+  fs.promises.writeFile(
+    "src/infrastructure/database/TaskDB.json",
+    JSON.stringify(data)
+  );
 
 export class InMemoryTaskRepository implements TaskRepository {
   async add(task: string): Promise<Task | null> {
@@ -32,7 +35,7 @@ export class InMemoryTaskRepository implements TaskRepository {
 
   async remove(id: number): Promise<void> {
     const resp = await readFile();
-    const valueIndex = resp.task.findIndex((value: any) => value.id == id);
+    const valueIndex = resp.task.findIndex((value: Task) => value.id == id);
 
     if (valueIndex === -1) throw new Error("No existe esta tasca");
 
@@ -42,7 +45,7 @@ export class InMemoryTaskRepository implements TaskRepository {
 
   async mark(id: number): Promise<Task | null> {
     const resp = await readFile();
-    const valueIndex = resp.task.findIndex((value: any) => value.id == id);
+    const valueIndex = resp.task.findIndex((value: Task) => value.id == id);
 
     if (valueIndex === -1) throw new Error("No existe esta tasca");
 
