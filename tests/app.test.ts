@@ -10,10 +10,6 @@ beforeAll(async () => {
   await server.stop()
   await server.start()
 })
-// beforeEach(async () => {
-//   await server.stop()
-//   await server.start()
-// })
 
 afterAll(async () => {
   // Cierra el servidor después de que todas las pruebas hayan finalizado
