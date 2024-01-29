@@ -5,7 +5,7 @@ Comando principales para ejecutar:
 Inicia el server con la app ToDo + arquitectura hexagonal
 
 ```sh
-npm run dev
+npm run build
 ```
 
 `npm run eslint` Ejecuta el eslint
@@ -32,3 +32,15 @@ Es una arquitectura de sofware que trata de distribuir un proyecto en 3 niveles 
 Los niveles tienen una intencionanilidad de poder trabajar de manera abstracta y classificar el proyecto según esto, para así, poder llevarlo a un nivel de modularidad que facilite cualquier actualización/cambio de consulta de datos, interfaz, endpoints, etc.
 
 Nuestro API Rest será sobre una aplicacion `ToDo List` en la que implementaremos el CRUD con clases y utilizando express como framework.
+
+Para probar sus métodos, utiliza POSTMAN o la extensiÓn Thunder Client de VSC, permiten hacer peticiones a una API, nuestra direccion saldrá imprimida nada más inicar la API ==> 'http://localhost:PORT/api'
+
+El manejo será de la siguiente manera:
+
+`/marcarTasca` con unos valores en json `{id: 1}` ==> te marcará como completada la tasca.
+
+`/mostrarTasca` No tiene parámetros ==> te mostrara todas las tascas.
+
+`/anyadirTasca` con unos valores en json `{task: 'data_a_añadir'}` ==> te añadirá la tasca deseada.
+
+`/borrarTasca` con unos valores en json `{id: 1}` ==> te borrará la tasca con ese id.
