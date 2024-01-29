@@ -5,13 +5,7 @@ Comando principales para ejecutar:
 Inicia el server con la app ToDo + arquitectura hexagonal
 
 ```sh
-npm run build
-```
-
-Inicia el server con la app ToDo + arquitectura All-in-One
-
-```sh
-npm run  dev
+npm run dev
 ```
 
 `npm run eslint` Ejecuta el eslint
